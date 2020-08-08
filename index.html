@@ -4,15 +4,16 @@
     <title>Google</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body class="grid_container">
 
     <!--navigation bar-->
     <header class="navbar">
-        <nav id="navbar_left">
+        <nav class="grid-item navbar_left">
             <a href="">About</a>
             <a href="">Store</a>
-        </nav>    
-        <nav id="navbar_right">
+        </nav>   
+        <div class="grid-item header_middle"></div> 
+        <nav class="grid-item navbar_right">
             <a href="">Gmail</a>
             <a href="">Images</a>
             <a href=""><img src="images/app-selector.png" id="app_image" alt="App Selector"></a>
@@ -22,8 +23,8 @@
     
     <!--google logo and search bar-->
     <div>
-        <img id="google_logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92">
-        <form id="search_bar">
+        <img class="grid-item google_logo" id="google_logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92">
+        <form class="google_logo" id="search_bar">
             <input type="search" id="text_input">
             <input type="submit" id="google_search" value="Google Search">
             <input type="submit" id="feeling_lucky" value="I'm Feeling Lucky">
@@ -32,12 +33,13 @@
     
     <!--footer-->
     <footer class="footer">
-        <nav id="footer_left">
+        <nav class="grid-item footer_left">
             <a href="">Advertising</a>
             <a href="">Business</a>
             <a href="">How Search works</a>
         </nav>
-        <nav id="footer_right">
+        <div class="grid-item footer_middle"></div>
+        <nav class="grid-item footer_right">
             <a href="">Privacy</a>
             <a href="">Terms</a>
             <a href="">Settings</a>
