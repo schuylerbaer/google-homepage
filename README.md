@@ -1,0 +1,1 @@
+This is the Google homepage replica from the Odin project's Web Development 101 course. This was the first project that I had to figure out on my own, without hand holding. I used the basic HTML and CSS skills that I learned from freecodecamp to make a non-functioning replica of the Google homepage to the best of my abilities.
