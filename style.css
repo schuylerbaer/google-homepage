@@ -2,8 +2,6 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 13px;
-    color: #000;
     text-decoration: none;
 }
 
@@ -28,23 +26,48 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
-    opacity: 0.75;
+    margin-top: 17px;
+    font-size: 13px;
+}
+
+.navbar a {
+    color: rgba(0,0,0,0.87);
 }
 
 .navbar_left {
     display: flex;
     flex-direction: row;
     width: 125px;
+    opacity: 0.75;
     justify-content: space-evenly;
+    margin-left: 5px;
 }
 
 .navbar_right {
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 250px;
     justify-content: space-evenly;
     align-items: center;
+    margin-right: 10px;
+}
+
+#app_image {
+    padding-top: 5px;
+}
+
+#sign_in_button {
+    background-color: rgb(57, 134, 235);
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 13px;
+    opacity: 1;
+    border-radius: 2px;
+    line-height: 28px;
+    padding: 1px 12px;
 }
 
 .main {
@@ -61,12 +84,24 @@ body{
 .search_bar {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 30px;
+    border: solid 1px rgb(228, 228, 228);
+    border-radius: 20px;
 }
 
 #text_input {
     width: 483.797px;
     height: 36px;
+    border: 1px rgb(228, 228, 228);
+    border-radius: 20px;
+    background-image: url(../images/glass.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+
+#text_input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .buttons {
@@ -79,18 +114,22 @@ body{
     border: none;
 }
 
-#google_search {
-    border: none;
+#google_search, #feeling_lucky {
+    border: 1px solid #f2f2f2;
     height: 35px;
     width: 120px;
-    color: rgb(119, 119, 119);
+    color: #5F6368;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-#feeling_lucky {
-    border: none;
-    height: 35px;
-    width: 120px;
-    color: rgb(119, 119, 119);
+#google_search:hover, #feeling_lucky:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
 }
 
 .footer {
@@ -102,21 +141,27 @@ body{
     background-color: #f2f2f2;
     color: #5f6368;
     height: 40px;
+    font-size: 14px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer a {
+    color: #5f6368;
 }
 
 .footer_left {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 350px;
     justify-content: space-evenly;
 }
 
 .footer_right {
     display: flex;
     flex-direction: row;
-    width: 250px;
+    width: 238px;
     justify-content: space-evenly;
-    right: 5px;
+    right: 8px;
     bottom: 0px;
 }
 
